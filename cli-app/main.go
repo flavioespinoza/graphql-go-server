@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	prisma "github.com/prisma/prisma-examples/go/cli-app/prisma-client"
+	prisma "github.com/graphql-go-server/cli-app/prisma-client"
 )
 
 func main() {

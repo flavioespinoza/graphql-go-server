@@ -9,8 +9,7 @@ Implement a **TODO-app** as a **CLI tool** using:
 
 ### 1. Download example & install dependencies
 
-Clone the repository in your go env folder:
-- Example `go/src/github.com/` **YOUR SETUP MAY BE DIFFERENT**
+Clone the repository in your go env folder (example: `go/src/github.com/` **YOUR SETUP MAY BE DIFFERENT**):
 
 ```
 cd go/src/github.com
@@ -20,7 +19,7 @@ git clone https://github.com/flavioespinoza/graphql-go-server.git
 Ensure dependencies are available and up-to-date:
 
 ```
-cd prisma-examples/go/cli-app
+cd graphql-go-server/cli-app
 dep ensure -update
 ```
 
