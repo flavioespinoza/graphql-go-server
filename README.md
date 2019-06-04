@@ -6,6 +6,10 @@ Implement a **TODO-app** as a **CLI tool** using:
 - [Prisma](https://prisma.io/)
 
 ## Getting Started
+Setup and deploy the following: 
+- GraphQL Server
+- GraphQL Playground
+- MySQL Database (free remote AWS provided by [Prisma](https://prisma.io/))
 
 ### 1. Download example & install dependencies
 
@@ -47,15 +51,25 @@ Then, follow these steps in the interactive CLI wizard:
 
 
 
-#### 3.1 Docker Alternative
+### 3.1 Docker Alternative
 
 <details>
 
- <summary>Run Prisma locally with docker-compose</summary>
+<summary>Run Prisma locally with docker-compose</summary>
 
-1. Ensure you have Docker installed on your machine. If not, you can get it from [here](https://store.docker.com/search?offering=community&type=edition):
+- Follow the steps below
 
-1. Create `docker-compose.yml` for MySQL (see [here](https://www.prisma.io/docs/prisma-server/database-connector-POSTGRES-jgfr/) for Postgres):
+1. Ensure you have Docker installed on your machine. 	If not, you can get it from [here](https://store.docker.com/search?offering=community&type=edition):
+	```bash
+	docker --version
+	```
+
+1. CD into the **`cli-app/`** directory and create **`docker-compose.yml`** file:
+	```bash
+	touch docker-compose.yml
+	```
+
+1. Copy the content below add it to the new **`docker-compose.yml`** file:
     ```yml
     version: '3'
     services:
@@ -90,14 +104,14 @@ Then, follow these steps in the interactive CLI wizard:
 	docker-compose up -
 	```
 
-1. Open `cli-app/prisma/prisma.yml` and set `endpoint` to `http://localhost:4466`:
+1. Open the `prisma.yml` located in the `graphql-go-server/cli-app/prisma/` directory and set `endpoint` to `http://localhost:4466`:
 	```yaml
 	# Specifies the HTTP endpoint of your Prisma API.
 	endpoint: http://localhost:4466 
 	...
 	```
 
-1. Deploy with `prisma`
+1. Deploy with `prisma`:
 	```bash
 	prisma deploy
 	```
