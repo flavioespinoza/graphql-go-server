@@ -12,7 +12,6 @@ Implement a **TODO-app** as a **CLI tool** using:
 Clone the repository in your go env folder (example: `go/src/github.com/` **YOUR SETUP MAY BE DIFFERENT**):
 
 ```
-cd go/src/github.com
 git clone https://github.com/flavioespinoza/graphql-go-server.git
 ```
 
@@ -30,7 +29,7 @@ To run the example, you need the Prisma CLI. Please install it via Homebrew or [
 ```
 brew install prisma
 brew tap
-```
+``` 
 
 ### 3. Set up database & deploy Prisma datamodel
 

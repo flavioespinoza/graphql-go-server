@@ -26,9 +26,8 @@ func main() {
 			if err != nil {
 				panic(err)
 			}
-			fmt.Println("Number of TODOs: ", len(todoes))
+			fmt.Println("AAA 29 Number of TODOs: ", len(todoes))
 		} else {
-			fmt.Println("Invalid command: ", command, " printing todos")
 			todos := allTodos(ctx, db)
 			printTodos(todos)
 		}
@@ -62,6 +61,10 @@ func main() {
 	fmt.Println("Invalid command: ", command, " printing todos")
 	todos := allTodos(ctx, db)
 	printTodos(todos)
+}
+
+func _log(msg string) {
+	fmt.Println("_log: ", msg)
 }
 
 func printTodo(todo prisma.Todo, key *int) {
