@@ -6,10 +6,10 @@ Implement a **TODO-app** as a **CLI tool** using:
 - [Prisma](https://prisma.io/)
 
 ## Getting Started
-Setup and deploy the following: 
+We will setup and deploy the following: 
 - GraphQL Server
 - GraphQL Playground
-- MySQL Database (free remote AWS provided by [Prisma](https://prisma.io/))
+- MySQL (free remote database on AWS provided by [Prisma](https://prisma.io/))
 
 ### 1. Download example & install dependencies
 
@@ -28,7 +28,11 @@ dep ensure -update
 
 ### 2. Install the Prisma CLI
 
-To run the example, you need the Prisma CLI. Please install it via Homebrew or [using another method](https://www.prisma.io/docs/prisma-cli-and-configuration/using-the-prisma-cli-alx4/#installation):
+To run the example, you need the Prisma CLI
+
+```bash
+npm install -g prisma
+```
 
 ```
 brew install prisma
@@ -49,15 +53,11 @@ Then, follow these steps in the interactive CLI wizard:
 1. **Authenticate** with Prisma Cloud in your browser (if necessary)
 1. Back in your terminal, **confirm all suggested values**
 
-
-
 ### 3.1 Docker Alternative
 
 <details>
 
 <summary>Run Prisma locally with docker-compose</summary>
-
-- Follow the steps below
 
 1. Ensure you have Docker installed on your machine. 	If not, you can get it from [here](https://store.docker.com/search?offering=community&type=edition):
 	```bash
