@@ -5,7 +5,7 @@ Implement a **TODO-app** as a **CLI tool** using:
 - [Golang](https://golang.org/)
 - [Prisma](https://prisma.io/)
 
-## How to use
+## Getting Started
 
 ### 1. Download example & install dependencies
 
@@ -93,23 +93,40 @@ You can now use [Prisma Admin](https://www.prisma.io/docs/prisma-admin/overview-
 go run main.go
 ```
 
-#### Add a `Todo` item
+#### create <item: string>
 
+Add Todo item
 ```
-go run main.go create Groceries
+go run main.go create 'Lissy Salsa Dancing, Thursday'
 ```
 
-#### List all `Todo` items
+#### list
+
+List all `Todo` items
 
 ```
 go run main.go list
 ```
 
-#### Delete a `Todo` item
+#### delete <item: string>
+Remove a `Todo` item
 
 ```
-go run main.go delete Groceries
+go run main.go delete 'Groceries'
 ```
+
+## 6. GraphQL Playground
+Navigate to: http://localhost:4466/
+
+![GraphQL Playground](docs/assets/img/graphql-playground.png)
+
+
+<!-- - [ ] TODO: Check if admin add can be disabled -->
+
+<!-- ## 7. GraphQL Admin
+Navigate to: http://localhost:4466/_admin
+
+![GraphQL Admin](docs/assets/img/graphql-admin.png) -->
 
 ## Next steps
 
